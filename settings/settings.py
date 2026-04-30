@@ -21,6 +21,7 @@ GOOGLE_REDIRECT_URI = os.getenv(
 )
 
 FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
+CORS_ORIGINS = os.getenv("CORS_ORIGINS", FRONTEND_URL)
 HTTPS_ONLY = os.getenv("HTTPS_ONLY", "false").strip().lower() == "true"
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
